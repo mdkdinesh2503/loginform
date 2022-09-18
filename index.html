@@ -20,8 +20,9 @@
         </div>
         <div class="login-content">
             <form action="">
-                <img src="./image/avatar2.png">
-                <p class="homepage">Go to <a class="goto" href="">&numsp;<i style="color: green;" class="fas fa-home"></i> Home page</a></p>
+                <a href=""><img src="./image/avatar2.png"></a>
+                <p class="homepage">Go to <a class="goto" href="">&numsp;<i style="color: green;"
+                            class="fas fa fa-home"></i>Home page</a></p>
                 <h2 class="title">Welcome</h2>
                 <div class="input-div one">
                     <div class="i">
@@ -40,6 +41,7 @@
                     </div>
                 </div>
                 <a class="forgotpass" href="#">Forgot Password?</a>
+                <p class="RegisterPage">Don't Have an Account <a class="goto" href="">&numsp;Click Here</a></p>
                 <input type="submit" class="btn" value="Login">
             </form>
         </div>
@@ -58,7 +60,8 @@
         font-family: 'Poppins', sans-serif;
         overflow: hidden;
     }
-    html{
+
+    html {
         font-size: 65%;
         max-width: 95%;
     }
@@ -101,19 +104,29 @@
         width: 420px;
     }
 
-    .login-content .homepage{
-        font-size: 2rem;   
-        display: block; 
+    .login-content .homepage {
+        font-size: 2rem;
+        display: block;
         color: grey;
     }
-    .login-content .homepage .goto{
+
+    .login-content .homepage .goto,
+    .login-content .RegisterPage .goto {
         text-decoration: none;
         transition: .3s;
         color: #125574;
     }
-    .login-content .homepage .goto:hover{
+
+    .login-content .homepage .goto:hover,
+    .login-content .RegisterPage .goto:hover {
         color: green;
-        
+    }
+
+    .login-content .RegisterPage {
+        font-size: 1.5rem;
+        color: grey;
+        display: flex;
+        justify-content: flex-start;
     }
 
     .login-content img {
@@ -239,23 +252,29 @@
         .login-content img {
             height: 120px;
         }
-        .login-content .title{
+
+        .login-content .title {
             font-size: 3rem;
         }
-        form{
+
+        form {
             width: 390px;
         }
-        ::placeholder{
+
+        ::placeholder {
             font-size: 14px;
         }
-        .input-div div input{
+
+        .input-div div input {
             font-size: 19px;
         }
-        .login-content .input-div{
+
+        .login-content .input-div {
             margin: 17px 0;
-        padding: 0;
+            padding: 0;
         }
     }
+
     @media (max-width:1300px) {
         .img img {
             width: 800px;
@@ -264,27 +283,34 @@
         .login-content img {
             height: 100px;
         }
-        .login-content .title{
+
+        .login-content .title {
             font-size: 2.4rem;
         }
-        form{
+
+        form {
             width: 300px;
         }
-        ::placeholder{
+
+        ::placeholder {
             font-size: 14px;
         }
-        .input-div div input{
+
+        .input-div div input {
             font-size: 19px;
         }
-        .login-content .input-div{
+
+        .login-content .input-div {
             margin: 10px 0;
         }
-        .forgotpass{
+
+        .forgotpass {
             font-size: .8rem;
         }
-        .btn{
+
+        .btn {
             height: 40px;
-        font-size: 1rem;
+            font-size: 1rem;
         }
     }
 
@@ -305,32 +331,44 @@
             justify-content: center;
         }
     }
+
     @media screen and (max-width: 300px) {
         .login-content img {
             height: 90px;
         }
-        .login-content .title{
+
+        .login-content .title {
             font-size: 2rem;
         }
-        ::placeholder{
+
+        ::placeholder {
             font-size: 12px;
         }
-        .input-div div input{
+
+        .input-div div input {
             font-size: 14px;
         }
-        .forgotpass{
+
+        .forgotpass {
             font-size: .6rem;
         }
-        .btn{
+
+        .btn {
             height: 30px;
-        font-size: 1rem;
+            font-size: 1rem;
         }
-        .login-content .input-div{
+
+        .login-content .input-div {
             margin: 8px 0;
         }
-        .login-content .homepage{
-        font-size: 1.5rem; 
-    }
+
+        .login-content .homepage {
+            font-size: 1.5rem;
+        }
+
+        .login-content .RegisterPage {
+            font-size: 1.3rem;
+        }
     }
 </style>
 
