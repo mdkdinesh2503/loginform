@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <a class="forgotpass" href="#">Forgot Password?</a>
-                <p class="RegisterPage">Don't Have an Account <a class="goto" href="">&numsp;Click Here</a></p>
+                <p class="RegisterPage">Don't Have an Account &numsp;<a class="goto" href="">Sign-Up</a></p>
                 <input type="submit" class="btn" value="Login">
             </form>
         </div>
@@ -332,6 +332,12 @@
         }
     }
 
+    @media screen and (max-width: 340px) {
+        .login-content .RegisterPage {
+            font-size: 1.3rem;
+        }
+    }
+
     @media screen and (max-width: 300px) {
         .login-content img {
             height: 90px;
@@ -366,9 +372,6 @@
             font-size: 1.5rem;
         }
 
-        .login-content .RegisterPage {
-            font-size: 1.3rem;
-        }
     }
 </style>
 
